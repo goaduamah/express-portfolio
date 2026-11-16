@@ -1,9 +1,10 @@
 
-
+/* Set the page height */
 html, body {
     height: 100%;
 }
 
+/* Main page layout and font */
 body {
     margin: 0;
     padding: 0;
@@ -13,11 +14,12 @@ body {
     min-height: 100vh;
 }
 
-
+/* Space below page headings */
 h1 {
     margin-bottom: 20px;
 }
 
+/* Navigation links */
 header a {
     text-decoration: none;
 }
@@ -26,10 +28,12 @@ header a:hover {
     text-decoration: underline;
 }
 
+/* Spacing in the footer */
 footer p {
     margin-bottom: 10px;
 }
 
+/* Push the footer to the bottom of the page */
 main {
     flex: 1;
 }

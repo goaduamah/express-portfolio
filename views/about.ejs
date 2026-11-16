@@ -1,13 +1,16 @@
 
+<%# Shared header and navigation %>
 <%- include('partials/header') %>
 
 <h1>About Me</h1>
 
+<%# Introduction section %>
 <div class="bg-dark text-white p-4 rounded mb-4">
     <p class="text-info">
-    <i class="fa-solid fa-location-dot"></i>
-    From Ghana to Canada
-</p>
+        <i class="fa-solid fa-location-dot"></i>
+        From Ghana to Canada
+    </p>
+
     <h2>A Little About Me</h2>
 
     <p>
@@ -28,7 +31,7 @@
     </p>
 </div>
 
-
+<%# Education and skills section %>
 <h2>Education and Technical Skills</h2>
 
 <div class="row mt-3">
@@ -67,12 +70,7 @@
 
 </div>
 
-
-
-<div class="row mt-4">
-
-    <div class="col-md-6 mb-3">
-        
+<%# My career goals %>
 <div class="bg-light rounded p-4 mt-4 mb-3">
     <h3>
         <i class="fa-solid fa-bullseye text-primary"></i>
@@ -86,3 +84,10 @@
         in IT.
     </p>
 </div>
+
+<%# Link to my projects page %>
+<a href="/projects" class="btn btn-primary mt-2">
+    See My Projects
+</a>
+
+<%- include('partials/footer') %>

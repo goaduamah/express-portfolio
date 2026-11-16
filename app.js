@@ -1,3 +1,4 @@
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -9,16 +10,18 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-// view engine setup
+// Set up EJS so Express can display my pages
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+// Middleware for handling requests and loading files
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Connect the routes to the application
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
@@ -38,4 +41,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// Export the app so the server can run it
 module.exports = app;
