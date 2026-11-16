@@ -1,20 +1,82 @@
 
+<%# Shared header %>
 <%- include('partials/header') %>
 
 <h1>Contact Me</h1>
 
-<p>Feel free to reach out to me.</p>
+<%# Short introduction %>
+<div class="bg-light p-4 rounded mb-4">
+    <h2>Let's Connect</h2>
 
-<h3>Email</h3>
-<p>
-    <a href="mailto:georgeoseiaduamah@gmail.com">
-        georgeoseiaduamah@gmail.com
-    </a>
-</p>
+    <p>
+        Thanks for visiting my portfolio!
+        If you have any questions about my projects
+        or would like to get in touch, you can reach
+        me using any of the options below.
+    </p>
+</div>
 
-<h3>GitHub</h3>
-<p>
-    <a href="https://github.com/goaduamah">My GitHub Profile</a>
-</p>
+<%# Contact information cards %>
+<div class="row mt-4">
 
+    <div class="col-md-4 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <i class="fa-solid fa-envelope fa-2x text-primary mb-3"></i>
+                <h4>Email</h4>
+
+                <p>
+                    You can send me an email if you
+                    have any questions.
+                </p>
+
+                <a href="mailto:georgeoseiaduamah@gmail.com"
+                   class="btn btn-outline-primary">
+                    Send Email
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <i class="fa-brands fa-github fa-2x text-primary mb-3"></i>
+                <h4>GitHub</h4>
+
+                <p>
+                    Check out my GitHub profile
+                    to see some of my projects.
+                </p>
+
+                <a href="https://github.com/goaduamah"
+                   class="btn btn-outline-primary">
+                    View GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <i class="fa-brands fa-linkedin fa-2x text-primary mb-3"></i>
+                <h4>LinkedIn</h4>
+
+                <p>
+                    You can also connect with
+                    me on LinkedIn.
+                </p>
+
+                <a href="https://www.linkedin.com/in/george-aduamah-44117a251/"
+                   class="btn btn-outline-primary">
+                    View LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<%# Shared footer %>
 <%- include('partials/footer') %>
